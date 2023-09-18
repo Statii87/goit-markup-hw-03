@@ -6,6 +6,7 @@ body {
   line-height: 1.14;
   background-color: var(--white-color);
   max-width: 1600px;
+  margin: 0 auto;
 }
 :root {
   --white-color: #fff;
@@ -228,6 +229,7 @@ padding-bottom: 94px;
   background-color: #f5f4fa;
   color: #212121;
   font-family: inherit;
+  padding: 6px 22px;
   border: none;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
@@ -238,14 +240,40 @@ padding-bottom: 94px;
   background-color: var(--highlight-color);
   cursor: pointer;
 }
+.button-list{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.container-button{
+  padding: 94px 0 50px;
+}
 .project-list {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin: 0;
+  padding: 20px 0 4px 24px;
 }
 .project-profile {
   font-size: 16px;
   line-height: 1.88;
   color: var(--description-color);
+  margin: 0;
+  padding: 0 0 20px 24px;
+}
+.project-item{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-between;
+ gap: 30px;
+ padding-bottom: 94px;
+}
+.project-item-list{
+  flex-basis: calc((100% - 90px) / 3);
+}
+.container-list-project{
+  border: 1px solid #EEE;
+  border-top: none;
 }
