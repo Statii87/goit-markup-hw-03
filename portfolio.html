@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,23 +12,25 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <a href="index.html" class="logo">Web<spam class="logo-header">Studio</spam></a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="nav-link">Studio</a></li>
-          <li><a href="portfolio.html" class="nav-link current">Portfolio</a></li>
-          <li><a href="#" class="nav-link">Contacts</a></li>
+    <header class="header">
+      <section class="header-section container">
+        <a href="index.html" class="logo">Web<spam class="logo-header">Studio</spam></a>
+        <nav class="nav-link">
+          <ul class="nav-link-list">
+            <li><a href="index.html" class="nav-link-item">Studio</a></li>
+            <li><a href="portfolio.html" class="nav-link-item current">Portfolio</a></li>
+            <li><a href="#" class="nav-link-item">Contacts</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-contact-list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="nav-contact">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+12127724150" class="nav-contact">+1 212-772-4150</a>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="mailto:info@devstudio.com" class="nav-contact">info@devstudio.com</a>
-        </li>
-        <li>
-          <a href="tel:+12127724150" class="nav-contact">+1 212-772-4150</a>
-        </li>
-      </ul>
+      </section>
     </header>
     <main>
       <ul class="unstyled-list">
@@ -86,14 +89,16 @@
       </ul>
     </main>
    <footer class="footer-section">
-      <a href="index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
-      <address>
-        <ul>
-          <li><a href="https://goo.gl/maps/XEtBJHLgHXzXXLZXA" target="_blank" class="contact-address">695 Park Ave, NY 10065, USA</a></li>
-          <li><a href="mailto:info@devstudio.com" class="contact-footer">info@devstudio.com</a></li>
-          <li><a href="tel:+12127724150" class="contact-footer">+1 212-772-4150</a></li>
-        </ul>
-      </address>
+      <section class="footer-container container">
+        <a href="index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+        <address>
+          <ul class="footer-contact">
+            <li><a href="https://goo.gl/maps/XEtBJHLgHXzXXLZXA" target="_blank" class="contact-address">695 Park Ave, NY 10065, USA</a></li>
+            <li><a href="mailto:info@devstudio.com" class="contact-footer">info@devstudio.com</a></li>
+            <li><a href="tel:+12127724150" class="contact-footer">+1 212-772-4150</a></li>
+          </ul>
+        </address>
+      </section>
     </footer>
   </body>
 </html>
